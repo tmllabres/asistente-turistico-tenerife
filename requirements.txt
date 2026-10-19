@@ -1,0 +1,31 @@
+# Dependencias de ejecución (probadas con Python 3.11-3.13).
+# Instalación:  pip install -r requirements.txt
+# En Linux, para no descargar la versión CUDA de PyTorch (~2 GB), instala antes:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# LLM (OpenAI y Gemini mediante su endpoint compatible)
+openai~=3.28
+tiktoken~=0.14
+
+# RAG: lectura del PDF, embeddings locales, vector store y BM25
+pymupdf~=1.28
+sentence-transformers~=6.1
+faiss-cpu~=1.15
+rank-bm25~=0.2.2
+numpy~=2.5
+
+# Herramientas y configuración
+pydantic~=2.14
+requests~=2.34
+python-dotenv~=1.2
+tzdata>=2025.1          # zona horaria Atlantic/Canary también en Windows
+
+# Análisis, notebook e interfaz web
+pandas~=3.0
+matplotlib~=3.11
+pillow~=12.3
+ipykernel~=7.4
+streamlit~=1.65
+
+# El propio paquete del proyecto (src/tenerife_assistant), en modo editable
+-e .

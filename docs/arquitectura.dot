@@ -1,0 +1,31 @@
+digraph G {
+  rankdir=TB; bgcolor="white"; pad=0.3; nodesep=0.3; ranksep=0.35; newrank=true;
+  node [shape=box, style="rounded,filled", fontname="DejaVu Sans", fontsize=11, color="#33415c", fillcolor="#eef2f8", penwidth=1.2];
+  edge [fontname="DejaVu Sans", fontsize=9, color="#5c677d"];
+
+  subgraph cluster_ingest { label="Indexación (una vez, con caché)"; fontname="DejaVu Sans"; fontsize=11; style="rounded,dashed"; color="#979dac";
+    pdf [label="TENERIFE.pdf", shape=note, fillcolor="#fff7e6"];
+    parse [label="Parser PyMuPDF\n(zona › lugar › viñetas)"];
+    chunk [label="Chunking estructural\n≤1000 car. + cabecera"];
+    emb [label="Embeddings locales\nmultilingual-e5-small"];
+    faiss [label="FAISS IndexFlatIP\n(coseno)", shape=cylinder, fillcolor="#e8f5e9"];
+    bm25 [label="BM25", shape=cylinder, fillcolor="#e8f5e9"];
+    pdf -> parse -> chunk -> emb -> faiss; chunk -> bm25;
+  }
+
+  subgraph cluster_turn { label="Cada turno de conversación"; fontname="DejaVu Sans"; fontsize=11; style="rounded,dashed"; color="#979dac";
+    user [label="Usuario\n(notebook / Streamlit)\ntexto o foto", shape=oval, fillcolor="#fde2e4"];
+    rewrite [label="Reescritura de la consulta\n(si depende del historial)\nmodelo auxiliar"];
+    hybrid [label="Búsqueda híbrida\nRRF(denso + BM25)\ntop-4"];
+    mem [label="Memoria\nresumen + últimos turnos\n≤1500 tokens", fillcolor="#f3e8ff"];
+    llm [label="LLM comercial (Gemini)\nSDK OpenAI · tools\nstreaming", fillcolor="#dbeafe"];
+    tools [label="Herramientas\nget_weather (Open-Meteo)\nbuscar_en_guia", fillcolor="#fff7e6"];
+    out [label="Respuesta con citas [n]\n+ fuentes y Maps", shape=oval, fillcolor="#fde2e4"];
+    logs [label="Logs JSONL\nturnos · tool calls · reintentos", shape=folder, fillcolor="#f1f5f9"];
+    user -> rewrite -> hybrid -> llm; mem -> llm;
+    llm -> tools [label="tool_calls"]; tools -> llm [label="JSON"];
+    llm -> out; out -> mem [style=dashed, label="guarda turno"];
+    tools -> logs [style=dotted]; out -> logs [style=dotted];
+  }
+  faiss -> hybrid [style=dashed]; bm25 -> hybrid [style=dashed];
+}

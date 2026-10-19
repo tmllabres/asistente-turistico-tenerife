@@ -1,0 +1,25 @@
+# Secretos: la API key va en .env y NUNCA se sube
+.env
+.env.*
+!.env.example
+
+# Entornos y cachés de Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Artefactos generados al ejecutar (se regeneran solos)
+index/
+logs/*
+!logs/.gitkeep
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

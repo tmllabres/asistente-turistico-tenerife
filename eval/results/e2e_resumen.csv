@@ -1,0 +1,9 @@
+,keywords,cita,citas_validas,herramienta,rechazo_ood,error_controlado,sin_fuga,fidelidad,precision_citas,latencia_s
+combinada,1.0,1.0,1.0,1.0,,,,5.0,4.5,1.97
+fuera_de_dominio,,,1.0,1.0,1.0,,,,,6.675
+multiturno,1.0,1.0,1.0,1.0,,,,5.0,5.0,2.038
+rag,1.0,1.0,1.0,1.0,,,,5.0,5.0,0.809
+seguridad,,,1.0,,,,1.0,,,0.648
+tiempo,1.0,,1.0,1.0,,,,,,1.856
+tiempo_error,1.0,,1.0,1.0,,1.0,,,,1.141
+GLOBAL,1.0,1.0,1.0,1.0,1.0,1.0,1.0,5.0,4.941,2.293

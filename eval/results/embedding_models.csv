@@ -1,0 +1,5 @@
+modelo,chunking,metodo,n_chunks,chars_medio,indexado_s,hit@1,hit@3,hit@5,MRR,latencia_ms,tiempo_total_s
+multilingual-e5-small (local),structural-1000,dense,25,590,1.99,0.75,0.9,0.975,0.834,16.29,2.7
+multilingual-e5-base (local),structural-1000,dense,25,590,5.57,0.725,0.9,0.95,0.815,47.08,11.5
+paraphrase-multilingual-MiniLM-L12-v2 (local),structural-1000,dense,25,590,0.7,0.4,0.525,0.65,0.486,16.2,4.7
+gemini-embedding-001 (API),structural-1000,dense,25,590,0.74,0.9,1.0,1.0,0.938,177.92,7.9

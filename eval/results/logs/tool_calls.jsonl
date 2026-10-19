@@ -1,0 +1,36 @@
+{"ts": "2026-10-11T02:59:02.639", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 757, "zona": "la_orotava", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T02:59:02.639", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-12", "zona": "la_orotava"}, "ok": true, "error": null, "latency_ms": 757.3}
+{"ts": "2026-10-11T02:59:41.912", "event": "tool_call", "tool": "buscar_en_guia", "arguments": {"consulta": "playa Puerto de la Cruz norte"}, "ok": true, "error": null, "latency_ms": 19.2}
+{"ts": "2026-10-11T02:59:43.464", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 845, "zona": "puerto_de_la_cruz", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T02:59:43.464", "event": "tool_call", "tool": "get_weather", "arguments": {"zona": "puerto_de_la_cruz", "fecha": "2026-10-12"}, "ok": true, "error": null, "latency_ms": 845.1}
+{"ts": "2026-10-11T02:59:46.378", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 135, "zona": "puerto_de_la_cruz", "fecha": "2026-10-17"}
+{"ts": "2026-10-11T02:59:46.378", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-17", "zona": "puerto_de_la_cruz"}, "ok": true, "error": null, "latency_ms": 135.3}
+{"ts": "2026-10-11T02:59:54.382", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 151, "zona": "teide", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T02:59:54.526", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 144, "zona": "la_laguna", "fecha": "2026-10-17"}
+{"ts": "2026-10-11T02:59:54.709", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 183, "zona": "costa_adeje", "fecha": "2026-10-14"}
+{"ts": "2026-10-11T02:59:55.036", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "error", "error": "ProxyError: HTTPSConnectionPool(host='api.open-meteo.invalid', port=443): Max retries exceeded with url: /v1/forecast?latitude=28.22", "latency_ms": 311}
+{"ts": "2026-10-11T02:59:55.829", "event": "http_attempt", "tool": "get_weather", "attempt": 2, "status": "error", "error": "ProxyError: HTTPSConnectionPool(host='api.open-meteo.invalid', port=443): Max retries exceeded with url: /v1/forecast?latitude=28.22", "latency_ms": 292}
+{"ts": "2026-10-11T02:59:57.104", "event": "http_attempt", "tool": "get_weather", "attempt": 3, "status": "error", "error": "ProxyError: HTTPSConnectionPool(host='api.open-meteo.invalid', port=443): Max retries exceeded with url: /v1/forecast?latitude=28.22", "latency_ms": 274}
+{"ts": "2026-10-11T02:59:57.796", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 143, "zona": "teide", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T02:59:57.796", "event": "tool_call", "tool": "get_weather", "arguments": {"zona": "teide", "fecha": "2026-10-12"}, "ok": true, "error": null, "latency_ms": 142.9}
+{"ts": "2026-10-11T03:00:01.733", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 1458, "zona": "costa_adeje", "fecha": "2026-10-18"}
+{"ts": "2026-10-11T03:00:01.734", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-18", "zona": "costa_adeje"}, "ok": true, "error": null, "latency_ms": 1458.8}
+{"ts": "2026-10-11T03:00:08.220", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 3011, "zona": "anaga", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T03:00:08.220", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-12", "zona": "anaga"}, "ok": true, "error": null, "latency_ms": 3011.1}
+{"ts": "2026-10-11T03:01:51.255", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 2691, "zona": "los_gigantes", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T03:01:51.255", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-12", "zona": "los_gigantes"}, "ok": true, "error": null, "latency_ms": 2691.1}
+{"ts": "2026-10-11T03:02:00.466", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 456, "zona": "teide", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T03:02:00.466", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-12", "zona": "teide"}, "ok": true, "error": null, "latency_ms": 456.4}
+{"ts": "2026-10-11T03:02:04.393", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 392, "zona": "la_laguna", "fecha": "2026-10-17"}
+{"ts": "2026-10-11T03:02:04.393", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-17", "zona": "la_laguna"}, "ok": true, "error": null, "latency_ms": 392.1}
+{"ts": "2026-10-11T03:02:08.055", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 194, "zona": "costa_adeje", "fecha": "2026-10-13"}
+{"ts": "2026-10-11T03:02:08.055", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-13", "zona": "costa_adeje"}, "ok": true, "error": null, "latency_ms": 194.1}
+{"ts": "2026-10-11T03:02:11.587", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 181, "zona": "el_medano", "fecha": "2026-10-17"}
+{"ts": "2026-10-11T03:02:11.587", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-10-17", "zona": "el_medano"}, "ok": true, "error": null, "latency_ms": 181.1}
+{"ts": "2026-10-11T03:02:11.820", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 233, "zona": "el_medano", "fecha": "2026-10-18"}
+{"ts": "2026-10-11T03:02:11.821", "event": "tool_call", "tool": "get_weather", "arguments": {"zona": "el_medano", "fecha": "2026-10-18"}, "ok": true, "error": null, "latency_ms": 233.6}
+{"ts": "2026-10-11T03:02:15.455", "event": "tool_call", "tool": "get_weather", "arguments": {"fecha": "2026-12-25", "zona": "santa_cruz"}, "ok": false, "error": "Solo hay previsión hasta el 2026-10-26 (15 días). Para el 2026-12-25 todavía no existe previsión fiable.", "latency_ms": 0.1}
+{"ts": "2026-10-11T03:02:21.851", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 174, "zona": "anaga", "fecha": "2026-10-12"}
+{"ts": "2026-10-11T03:02:21.851", "event": "tool_call", "tool": "get_weather", "arguments": {"zona": "anaga", "fecha": "2026-10-12"}, "ok": true, "error": null, "latency_ms": 174.7}
+{"ts": "2026-10-11T03:02:27.635", "event": "http_attempt", "tool": "get_weather", "attempt": 1, "status": "ok", "http_status": 200, "latency_ms": 288, "zona": "teide", "fecha": "2026-10-17"}
+{"ts": "2026-10-11T03:02:27.635", "event": "tool_call", "tool": "get_weather", "arguments": {"zona": "teide", "fecha": "2026-10-17"}, "ok": true, "error": null, "latency_ms": 288.0}

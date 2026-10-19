@@ -1,0 +1,11 @@
+.env
+.venv
+venv
+index
+logs
+notebooks
+eval
+tests
+docs
+**/__pycache__
+.git

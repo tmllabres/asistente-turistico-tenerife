@@ -1,0 +1,7 @@
+# Herramientas de desarrollo: tests, linter y ejecución de notebooks por línea de comandos.
+-r requirements.txt
+pytest~=9.1
+httpx~=0.28             # lo usan los tests para simular errores 429 de la API
+ruff~=0.17
+nbclient~=0.11
+nbformat~=5.11

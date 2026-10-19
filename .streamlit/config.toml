@@ -1,0 +1,10 @@
+[server]
+# El vigilante de ficheros inspecciona los módulos perezosos de transformers y llena el log de avisos.
+fileWatcherType = "none"
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#d1495b"

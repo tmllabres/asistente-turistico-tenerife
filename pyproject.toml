@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tenerife-assistant"
+version = "1.0.0"
+description = "Asistente turístico de Tenerife con RAG, diálogo multiturno y function calling sobre un LLM comercial"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "Antonio" }]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+extend-exclude = ["notebooks"]
+
+# E, W: estilo PEP 8 · F: errores (variables sin usar, imports...) · I: orden de imports · D: docstrings
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "D"]
+ignore = [
+    "D100", "D104", "D105", "D107",   # no obligo a poner docstring en módulos, paquetes ni __init__
+    "D203", "D213",                   # reglas de formato que chocan con otras (uso D211 y D212)
+    "D401",                           # pide el modo imperativo en inglés y mis docstrings están en castellano
+    "D400", "D415",                   # pide terminar el resumen en punto
+    "D413",                           # pide línea en blanco tras la última sección
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D"]
+"app/*" = ["D103"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
